@@ -11,6 +11,8 @@
 
 ## Installation
 
+- git clone http://192.168.0.137:63424/kadyl/ecp.recycle.kz.git
+- composer update
 - Edit `.env` and set your database connection details
 - (When installed via git clone or download, run `php artisan key:generate` and `php artisan jwt:secret`)
 - `php artisan migrate`
