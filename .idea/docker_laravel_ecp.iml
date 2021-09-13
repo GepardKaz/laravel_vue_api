@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/auto.recycle.kz/vendor/j4mie/paris" />
+      <excludeFolder url="file://$MODULE_DIR$/auto.recycle.kz/vendor/j4mie/idiorm" />
+      <excludeFolder url="file://$MODULE_DIR$/auto.recycle.kz/vendor/phpmailer/phpmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/auto.recycle.kz/vendor/mikecao/flight" />
+      <excludeFolder url="file://$MODULE_DIR$/auto.recycle.kz/vendor/composer" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/auto.recycle.kz/vendor/j4mie/paris" />
+      <path value="$PROJECT_DIR$/auto.recycle.kz/vendor/j4mie/idiorm" />
+      <path value="$PROJECT_DIR$/auto.recycle.kz/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/auto.recycle.kz/vendor/mikecao/flight" />
+      <path value="$PROJECT_DIR$/auto.recycle.kz/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.3">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+</project>

@@ -1,0 +1,26 @@
+version: '3.8'
+
+### Services
+services:
+  ### Web Server Container
+  laravel_ecp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: laravel_ecp
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www
+    ports:
+       - "8000:80"
+    volumes:
+      - ./:/var/www
+      - ./php-fpm/php.ini:/etc/php/7.4/fpm/php.ini
+    networks:
+      - laravel_ecp_network
+
+# Networks
+networks:
+    laravel_ecp_network:
+      driver: bridge
