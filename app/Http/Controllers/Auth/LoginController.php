@@ -44,6 +44,26 @@ class LoginController extends Controller
         }
     }
 
+    protected function sign(Request $request)
+    {
+        $hash = $request->hash;
+        $sign = $request->sign;
+
+        if($hash && $sign){
+            $check = array();
+            exec('cd /opt/ksign && LD_LIBRARY_PATH="/opt/kalkancrypt:/opt/kalkancrypt/lib/engines" php check.php '.$hash.' '.$sign, $check);
+            $j = json_decode(base64_decode($check[0]));
+
+            if($j->status == 'SUCCESS') {
+                return response()->json(['data' => $j]);
+            }else{
+                return response()->json(['error' => 'Подпись не прошла проверку!']);  
+            }
+        }else{
+            return response()->json(['error' => 'Hash or Sign is not requested!']); 
+        }
+    }
+
     /**
      * Attempt to log the user into the application.
      *
