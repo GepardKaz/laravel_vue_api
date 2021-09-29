@@ -23,6 +23,7 @@
 - docker-compose exec ecp_server composer install(or composer update)
 - docker-compose exec ecp_server php artisan config:cache
 - docker-compose exec ecp_server php artisan migrate
+- docker-compose exec ecp_server php artisan key:generate
 - docker-compose exec ecp_server npm install
 - docker-compose exec ecp_server npm run dev
 ```
