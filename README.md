@@ -17,14 +17,15 @@
 - (When installed via git clone or download, run `php artisan key:generate` and `php artisan jwt:secret`)
 - `php artisan migrate`
 - `npm install`
-
-#### if via docker
+```bash
+#### via docker
 - docker-compose up --build
 - docker-compose exec ecp_server composer install(or composer update)
 - docker-compose exec ecp_server php artisan config:cache
 - docker-compose exec ecp_server php artisan migrate
 - docker-compose exec ecp_server npm install
 - docker-compose exec ecp_server npm run dev
+```
 ## Usage
 
 #### Development
