@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3'
 
 ### Services
 services:
@@ -6,7 +6,7 @@ services:
   ecp_server:
     image: 192.168.0.137:5000/ecp.server
     container_name: ecp_server
-    restart: unless-stopped
+    restart: always
     tty: true
     working_dir: /var/www
     ports:
