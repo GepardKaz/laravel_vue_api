@@ -15,7 +15,8 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-/docker-files
+/docker_files
 /storage
 /nginx
 /php-fpm
+Dockerfile
