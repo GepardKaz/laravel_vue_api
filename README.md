@@ -11,7 +11,7 @@
 
 ## Installation
 
-- git clone http://192.168.0.137:63424/kadyl/ecp.recycle.kz.git
+- git clone https://github.com/GepardKaz/laravel_vue_api.git
 - composer update
 - Edit `.env` and set your database connection details
 - (When installed via git clone or download, run `php artisan key:generate` and `php artisan jwt:secret`)
@@ -20,12 +20,12 @@
 ```bash
 #### via docker
 - docker-compose up --build
-- docker-compose exec ecp_server composer install(or composer update)
-- docker-compose exec ecp_server php artisan config:cache
-- docker-compose exec ecp_server php artisan migrate
-- docker-compose exec ecp_server php artisan key:generate
-- docker-compose exec ecp_server npm install
-- docker-compose exec ecp_server npm run dev
+- docker-compose exec ecp composer install(or composer update)
+- docker-compose exec ecp php artisan config:cache
+- docker-compose exec ecp php artisan migrate
+- docker-compose exec ecp php artisan key:generate
+- docker-compose exec ecp npm install
+- docker-compose exec ecp npm run dev
 ```
 ## Usage
 
